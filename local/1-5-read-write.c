@@ -1,6 +1,10 @@
 #include "apue.h"
 #define BUFFSIZE 4096
 
+/*
+    - read, write, STDIN_FILENO, STDOUT_FILENO are all available in unistd.h
+*/
+
 int
 main(void)
 {
