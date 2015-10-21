@@ -9,9 +9,9 @@ main(void)
     
     int keep_reading = 1;
     while (keep_reading){
-        if (n = read(STDIN_FILENO, buf, BUFFSIZE)) > 0{
-            // File Read Success
-            // Write to output
+        if ((n = read(STDIN_FILENO, buf, BUFFSIZE)) > 0){
+            /*  File Read Success */
+            /* Write to output */
             if (write(STDOUT_FILENO, buf, n) != n){
                 err_sys("write error");
             }
